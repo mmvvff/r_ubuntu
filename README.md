@@ -1,6 +1,6 @@
 # R Server Setup on Ubuntu
 
-English | Spanish
+English | [Spanish](https://github.com/mmvvff/r_ubuntu/blob/main/r_ubuntu_es/README_ES.md)
 
 ## Motivation
 
