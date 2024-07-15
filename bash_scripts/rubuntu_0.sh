@@ -1,6 +1,8 @@
 # Update package lists and upgrade installed packages silently
 sudo apt update -qq -y && sudo apt upgrade -qq -y && sudo apt update -qq -y
 
+cd ~ && sudo mkdir -p downloads
+
 #### R Setup
 # Install R environment: https://cran.rstudio.com/bin/linux/ubuntu/
 # Install essential helper packages
@@ -34,14 +36,15 @@ lsb_release -a
 # Download and install RStudio Desktop
 # Check the latest download link at: https://posit.co/download/rstudio-desktop/#download
 cd downloads
-sudo wget https://download1.rstudio.org/electron/focal/amd64/rstudio-2023.09.1-494-amd64.deb
-sudo gdebi -n rstudio-2023.09.1-494-amd64.deb
+sudo wget https://download1.rstudio.org/electron/focal/amd64/rstudio-2024.04.2-764-amd64.deb
+sudo gdebi -n rstudio-2024.04.2-764-amd64.deb
+
 
 # Download and install RStudio Server
 # Check the latest download link at: https://posit.co/download/rstudio-server/
 cd downloads
-sudo wget https://download2.rstudio.org/server/focal/amd64/rstudio-server-2023.09.1-494-amd64.deb
-sudo gdebi -n rstudio-server-2023.09.1-494-amd64.deb
+sudo wget https://download2.rstudio.org/server/focal/amd64/rstudio-server-2024.04.2-764-amd64.deb
+sudo gdebi -n rstudio-server-2024.04.2-764-amd64.deb
 
 # Stop the RStudio Server service
 sudo rstudio-server stop
