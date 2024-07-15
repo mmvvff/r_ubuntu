@@ -1,5 +1,5 @@
 # Actualizar listas de paquetes y actualizar paquetes instalados en silencio
-sudo apt update -qq -y && sudo apt upgrade -qq -y && sudo apt update -qq -y 
+sudo apt update -qq -y && sudo apt upgrade -qq -y && sudo apt update -qq -y
 
 #### Configuración de R
 # Instalar entorno R: https://cran.rstudio.com/bin/linux/ubuntu/
@@ -7,7 +7,7 @@ sudo apt update -qq -y && sudo apt upgrade -qq -y && sudo apt update -qq -y
 sudo apt install --no-install-recommends software-properties-common dirmngr
 
 # Agregar la clave de firma (por Michael Rutter) para los repositorios de R
-# Para verificar la clave, usar: gpg --show-keys /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc 
+# Para verificar la clave, usar: gpg --show-keys /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc
 # Huella digital: E298A3A825C0D65DFD57CBB651716619E084DAB9
 wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | sudo tee -a /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc
 
@@ -63,3 +63,6 @@ echo $ip_server
 # Acceder a RStudio Server en:
 # http://<ip_server>:8787
 # Ejemplo: http://35.231.233.25:8787
+
+# Detener el servicio de RStudio Server
+sudo rstudio-server stop
