@@ -48,7 +48,13 @@ By leveraging Ubuntu and R servers in the cloud, researchers and data profession
 
 ## Usage
 
-1. Clone this repository or copy the script to your Ubuntu machine.
+1. You may run directly this script (recommended):
+
+```
+wget -O - https://raw.githubusercontent.com/mmvvff/r_ubuntu/main/bash_scripts/rubuntu_0.sh | bash
+```
+
+1. Alternatively, you may clone this repository or copy the script to your Ubuntu machine.
 2. Make the script executable:
    ```
    chmod +x setup_r_server.sh
